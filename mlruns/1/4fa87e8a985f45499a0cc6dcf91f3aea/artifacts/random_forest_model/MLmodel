@@ -1,0 +1,46 @@
+artifact_path: random_forest_model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.0
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+is_signature_from_type_hint: false
+mlflow_version: 2.21.3
+model_size_bytes: 5041452
+model_uuid: 6dc42a02a11640c39c2d69e53cb1965d
+prompts: null
+run_id: 4fa87e8a985f45499a0cc6dcf91f3aea
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "long", "name": "gender", "required": true}, {"type": "double",
+    "name": "SeniorCitizen", "required": true}, {"type": "double", "name": "Partner",
+    "required": true}, {"type": "double", "name": "Dependents", "required": true},
+    {"type": "double", "name": "tenure", "required": true}, {"type": "double", "name":
+    "PhoneService", "required": true}, {"type": "long", "name": "MultipleLines", "required":
+    true}, {"type": "long", "name": "InternetService", "required": true}, {"type":
+    "long", "name": "OnlineSecurity", "required": true}, {"type": "long", "name":
+    "OnlineBackup", "required": true}, {"type": "long", "name": "DeviceProtection",
+    "required": true}, {"type": "long", "name": "TechSupport", "required": true},
+    {"type": "long", "name": "StreamingTV", "required": true}, {"type": "long", "name":
+    "StreamingMovies", "required": true}, {"type": "long", "name": "Contract", "required":
+    true}, {"type": "double", "name": "PaperlessBilling", "required": true}, {"type":
+    "long", "name": "PaymentMethod", "required": true}, {"type": "double", "name":
+    "MonthlyCharges", "required": true}, {"type": "long", "name": "TotalCharges",
+    "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-04-21 18:16:47.452568'
